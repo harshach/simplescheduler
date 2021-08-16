@@ -1,1 +1,1 @@
-recursive-include sdscheduler/static *
+recursive-include simplescheduler/static *
