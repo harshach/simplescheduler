@@ -1,6 +1,6 @@
 # Scheduler
 
-``sdscheduler`` is a flexible python library for building your own cron-like system to schedule jobs, which is to run a tornado process to serve REST APIs and a web ui.
+``simplescheduler`` is a flexible python library for building your own cron-like system to schedule jobs, which is to run a tornado process to serve REST APIs and a web ui.
 
 
 
@@ -25,10 +25,10 @@ Using pip (from GitHub repo)
     #
 
     # If you want the latest build
-    git+https://github.com/simplescheduler/simplescheduler.git#egg=simplescheduler
+    git+https://github.com/open-metadata/simplescheduler.git#egg=simplescheduler
 
     
-    pip install -e git+https://github.com/simplescheduler/simplescheduler.git#egg=simplescheduler
+    pip install -e git+https://github.com/open-metadata/simplescheduler.git#egg=simplescheduler
 
 ### Three things
 
@@ -50,7 +50,7 @@ Each job should be a standalone class that is a subclass of ``sdscheduler.job.Jo
 
 After you set up ``Settings``, ``Server`` and ``Jobs``, you can run the whole thing like this:
 
-    SDSCHEDULER_SETTINGS_MODULE=simple_scheduler.settings \
+    SIMPLESCHEDULER_SETTINGS_MODULE=simple_scheduler.settings \
     PYTHONPATH=.:$(PYTHONPATH) \
 		    python simple_scheduler/scheduler.py
 		  
@@ -67,10 +67,6 @@ After you set up ``Settings``, ``Server`` and ``Jobs``, you can run the whole th
     
     make clean
 
-
-## REST APIs
-
-Please see [README.md in sdscheduler/server/handlers](https://github.com/StreamlineData/sdscheduler/blob/master/sdscheduler/server/handlers/README.md).
 
 
 
